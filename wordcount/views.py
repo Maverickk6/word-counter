@@ -4,11 +4,11 @@ from django.views.generic import TemplateView
 import operator
 
 
-class Home(TemplateView):
-	template_name = 'home.html'
+def home(request):
+	return render(request, 'home.html', {} ) 
 
-class About(TemplateView):
-	template_name = 'about.html'
+def about(request):
+	return render(request, 'about.html', {} )
 
 
 
